@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
-p, span, small, em, li, a {
+span, small, em, li{
   font-family: 'Maven Pro', sans-serif;
   font-size: 1em;
   line-height: 1.3em;
@@ -255,6 +255,40 @@ header {
 .category {
   width: 30%;
 }
+.latest-deals {
+	width: 90%;
+	margin:auto;
+}
+
+.deals-title {
+width: 100%;
+height: 2.5em;
+margin:1.5em 0;
+}
+
+.deals-title p #title {
+	font-size: 1.5em;
+	color: #f42;
+	text-decoration: none;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 700px;
+	
+}
+
+.deals-title p #more-deals {
+	font-size: 0.75em;
+	color: #f42;
+	text-decoration: none;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 300px;
+    float: right;
+    
+}
+.deal-title:after {
+    clear: both;
+    content: "";
+    display: block;
+}
 
 .inner-deal {
   display: flex;
@@ -263,61 +297,119 @@ header {
 }
 
 .article-deal {
-  width: 23%;
-}
+  width: 24%;
+  }
 
 .article-deal img {
-    width: 16.875em;
-    height: 12.563em;
+  width: 16.875em;
+  height: 12.563em;
+}
+
+.article-deal p span{
+margin-left: 0.6em;
+}
+
+.article-deal p small{
+	font-size: 0.63em;
+}
+
+.article-deal h3 a {
+	line-height: 1em;
+	font-size:0.75em;
+	color: #000;
+}
+
+.article-deal h3 a:hover{
+	color: #f42;
+	text-decoration: underline;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 .top-footer {
-	background-color: #333;
+  width: 100%;
+  height: 160px;
+  background-color: #131313;
 }
 
-#social-media {
-	height: 2.813em;
-	display: inline;
-	list-style: none;
+#social-media ul {
+  height: 2.813em;
+  display: inline;
+  list-style: none;
+  vertical-align: baseline;
 }
 
-.top-footer #social-media li {
-	display: inline-block;
+#social-media ul li {
+  display: inline-block;
 
 }
 
-.top-footer #social-media li {
-    font-size: 1.25em;
-     display: inline-block;
-    cursor: pointer;
-    width: 2.5em;
-    height: 2.5em;
-    margin-right: 0.625em;
-    text-align: center;
-    font-weight: normal;
-    line-height: 2em;
-    border-radius: 50%;
-    background: #555;
+#social-media ul li {
+  font-size: 1.25em;
+  display: inline-block;
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 50%;
+  background: #333;
+  border-radius: 0.063em solid #777;
+  margin: 1.5em 0.625em 1.5em 0;
 }
 
-.top-footer #social-media li a {
-	text-decoration: none;
-	 color: #fff;
+#social-media ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.top-footer #social-media li a i {
-	padding-top: 0.625em;
+#social-media ul li a i {
+  padding-top: 0.625em;
 }
 
-.top-footer #social-media li:hover {
-	background-color: #333;
-	border-radius: 0.063em solid #777;
+#social-media ul li:hover {
+  background-color: #131313;
+	
 }
 
-#menu-links li {
-    display: inline-block;
+#menu-links ul {
+  width: 100%;
+  height: 1.5em;
+  display: inline;
+  list-style: none;
+}
+
+#menu-links ul li {
+  padding-right: 0.625em;
+  display: inline-block;
+}
+
+#menu-links ul li a {
+  text-decoration: none;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  color:#aaa;
+}
+
+#menu-links ul li a:hover {
+  color:#fff;
+}
+
+.bottom-footer {
+  height: 6.0625em;
+  width: 100%;
+  background-color: #000;
+}
+
+.bottom-footer p {
+  line-height: 1.25em;
+  font-size: 0.8125em;
+  color: #aaa;
+}
+
+.bottom-footer p i {
+  color: red;
+  font-size: 0.5em;
 }
