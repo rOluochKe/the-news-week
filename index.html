@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title> TNW </title>
@@ -14,16 +15,16 @@
     <header>
         <!-- Top Navigation Bar -->
         <nav class="top-nav">
-            <ul>
+            <ul class="nav-left">
                 <li><a href="#">New</a></li>
-                <li><a href="#">Events</a>
+                <li><a href="#">Events <i class="fa fa-caret-down"></i></a>
                     <ul id="first-dropdown">
                         <li><a href="#">Rnext</a></li>
                         <li><a href="#">Hard For Summit</a></li>
                         <li><a href="#">TNW2020</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Businees</a>
+                <li><a href="#">Businees <i class="fa fa-caret-down"></i></a>
                     <ul id="second-dropdown">
                         <li><a href="#">Index</a></li>
                         <li><a href="#">TNW X</a></li>
@@ -33,36 +34,48 @@
                 <li><a href="#">Spaces</a></li>
                 <li><a href="#">Terms &amp; Conditions</a></li>
             </ul>
+
+            <ul class="nav-right">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
         <!-- Main Navigation Bar-->
         <nav class="main-menu">
-            <ul>
+            <ul class="main-left">
                 <li><a href="#">Latest</a></li>
                 <li><a href="#">Hard Fork</a></li>
                 <li><a href="#">Plugged</a></li>
                 <li><a href="#">Fundamentals</a></li>
                 <li><a href="#">Work 2030</a></li>
                 <li><a href="#">Latest</a></li>
-                <li><i class="fa fa-search"></i></li>
+            </ul>
+
+            <ul class="main-right">
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
             </ul>
         </nav>
         <!-- Banner -->
         <div class="banner">
             <div class="article article-one">
-                <div>
-                    <img src="" alt="">
+              <a href="#">
+                <div class="hero-logo">
+                    <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" class="image-logo" alt="logo">
                     <p>Thursday — August 8, 2019</p>
                 </div>
-                <div>
+                <div class="cat-title">
                     <p>TECH</p>
-                    <h1>Researchers hacked a Canon DSLR with Bitcoin demanding ransomware</h1>
-                    <div>
-                        <a href="#">by Bryan Clark</a>
-                        <p><i class=""></i> 1 hour ago</p>
-                        <p><i class=""></i> 0</p>
-                        </di>
-                    </div>
+                    <h1>Researchers hacked a Canon DSLR with Bitcoin</h1>
+                    <ul class="authored-by">
+                        <li><a href="#">by Bryan Clark</a></li>
+                        <li><a href="#"><i class="fa fa-clock"></i> 1 hour ago</a></li>
+                        <li><a href="#"><i class="fa fa-share-alt"></i> 0</a></li>
+                    </ul>
                 </div>
+              </a>
             </div>
             <div class="article">
                 <div class="article-two">
@@ -407,7 +420,7 @@
     <!-- footer -->
     <footer>
         <div class="top-footer">
-           <div id="social-media"> 
+           <div id="social-media">
                 <ul>
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>

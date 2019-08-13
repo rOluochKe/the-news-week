@@ -18,6 +18,10 @@ span, small, em, li{
   line-height: 1.3em;
 }
 
+a {
+  text-decoration: none;
+}
+
 i {
     font-style: normal;
 }
@@ -27,8 +31,10 @@ header {
 }
 
 .top-nav {
-  width: 100%;
-  background-color: black;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  height: 2em;
 }
 
 .top-nav ul {
@@ -44,12 +50,12 @@ header {
 .top-nav ul li a {
   display: block;
   color: #aaa;
-  line-height: 1.3em;
+  line-height: 2em;
+  font-weight: 500;
   vertical-align: baseline;
-  font-size: 1em;
+  font-size: 0.813em;
   text-decoration: none;
   padding: 0 0.8em;
-
 }
 
 .top-nav ul li a:hover {
@@ -82,6 +88,8 @@ header {
   width: 100%;
   height: 3em;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-menu ul li {
@@ -95,7 +103,8 @@ header {
   padding: 0 0.75em;
   text-transform: uppercase;
   color: #aaa;
-  font-family: Shentox,sans-serif;
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 1em;
   font-weight: 500;
   line-height: 3em;
 }
@@ -112,8 +121,60 @@ header {
   grid-template-rows: 30em 30em;
 }
 
+.hero-logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.938em;
+}
+
+.image-logo {
+    width: 27.938em;
+}
+
+.hero-logo p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.313em;
+  color: #fff;
+}
+
+.cat-title {
+  margin: 0.938em;
+  position: relative;
+  top: 8.750em;
+}
+
+.cat-title p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1.313em;
+  color: #fff;
+  margin: 0.625em 0;
+}
+
+.cat-title h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 3.500em;
+  color: #fff;
+}
+
+.authored-by {
+    display: inline-flex;;
+}
+
+.authored-by li {
+    list-style: none;
+    padding-right: 1em;
+}
+
+.authored-by li a {
+    color: #fff;
+}
+
 .article-one {
-  background-image: url('../images/image-1.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../images/image-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -272,7 +333,7 @@ margin:1.5em 0;
 	text-decoration: none;
 	font-family: 'Merriweather Sans', sans-serif;
 	font-weight: 700px;
-	
+
 }
 
 .deals-title p #more-deals {
@@ -282,7 +343,7 @@ margin:1.5em 0;
 	font-family: 'Merriweather Sans', sans-serif;
 	font-weight: 300px;
     float: right;
-    
+
 }
 .deal-title:after {
     clear: both;
@@ -371,7 +432,7 @@ footer {
 
 #social-media ul li:hover {
   background-color: #131313;
-	
+
 }
 
 #menu-links ul {
