@@ -1043,6 +1043,10 @@ footer {
 }
 
 @media screen and (max-width: 766px) {
+  .hide-me {
+    display: none !important;
+  }
+
   .banner {
       margin-top: 29px;
   }
@@ -1070,11 +1074,11 @@ footer {
     position: relative;
     top: 0px;
   }
-  
+
   .hamberger-menu {
     border: 0.063em solid #eee;
     display: inline-block !important;
-    
+
   }
 
   .hamberger-menu a i{
