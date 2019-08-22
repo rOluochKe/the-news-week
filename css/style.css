@@ -116,6 +116,11 @@ header {
     border-left: 0.063em solid #eee;
 }
 
+.hamberger-menu {
+  border: 0.063em solid #eee;
+  display: none !important;
+}
+
 .banner {
   max-height: 30em;
   margin: 0.313em;
@@ -753,10 +758,17 @@ footer {
   background-color: #000;
 }
 
+.bottom-footer p span img{
+  height: 0.8em;
+  width: auto;
+  vertical-align: baseline;
+}
+
 .bottom-footer p {
   line-height: 1.25em;
   font-size: 0.8125em;
   color: #aaa;
+  padding-top: 1em;
 }
 
 .bottom-footer p i {
@@ -782,6 +794,7 @@ footer {
     background: red;
     padding: 0 15px;
     z-index: 999;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
   }
 
   .logo-tnw a img {
@@ -790,6 +803,7 @@ footer {
     background: red;
     position: relative;
     top: 0px;
+
   }
 
   .top-nav {
@@ -916,6 +930,7 @@ footer {
     background: red;
     padding: 0 15px;
     z-index: 999;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
   }
 
   .logo-tnw a img {
@@ -1045,6 +1060,7 @@ footer {
     background: red;
     padding: 0 15px;
     z-index: 999;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
   }
 
   .logo-tnw a img {
@@ -1053,6 +1069,16 @@ footer {
     background: red;
     position: relative;
     top: 0px;
+  }
+  
+  .hamberger-menu {
+    border: 0.063em solid #eee;
+    display: inline-block !important;
+    
+  }
+
+  .hamberger-menu a i{
+    color: red;
   }
 
   .top-nav {
