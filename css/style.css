@@ -1,0 +1,1305 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+span, small, em, li{
+  font-family: 'Maven Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+    font-style: normal;
+}
+
+header {
+    display: grid;
+}
+
+.top-nav {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  height: 2em;
+}
+
+.top-nav ul {
+  display: flex;
+}
+
+.top-nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+ }
+
+.top-nav ul li a {
+  display: block;
+  color: #aaa;
+  line-height: 2em;
+  font-weight: 500;
+  vertical-align: baseline;
+  font-size: 0.813em;
+  text-decoration: none;
+  padding: 0 0.8em;
+}
+
+.top-nav ul li a:hover {
+  color: #fff;
+}
+
+.top-nav ul li ul {
+  position: absolute;
+  display: none;
+  background-color: black;
+  padding: 0;
+  top: 2.03em;
+  z-index: 999;
+}
+
+.top-nav ul li:hover ul {
+  display: block;
+}
+
+.top-nav ul li ul li {
+  width: 12.5em;
+  margin: 0.65em 0;
+}
+
+.top-nav ul li ul li a:hover {
+  color: #fff;
+}
+
+.main-menu {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  position: sticky;
+  z-index: 999;
+}
+
+.main-menu ul li {
+  float: left;
+  list-style: none;
+  display: inline-block;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  padding: 0 0.75em;
+  text-transform: uppercase;
+  color: #aaa;
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 3em;
+}
+
+.main-menu ul li a:hover {
+  color: #000;
+}
+
+.search {
+    border-left: 0.063em solid #eee;
+}
+
+.hamberger-menu {
+  border: 0.063em solid #eee;
+  display: none !important;
+}
+
+.banner {
+  max-height: 30em;
+  margin: 0.313em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 15em 15em;
+  grid-gap: 0.3125em;
+}
+
+.hero-logo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.938em;
+}
+
+.image-logo {
+    width: 27.938em;
+}
+
+.hero-logo p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.313em;
+  color: #fff;
+}
+
+.cat-title {
+  margin: 0.938em;
+  position: relative;
+  top: 8.750em;
+}
+
+.cat-title p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1.313em;
+  color: #fff;
+  margin: 0.625em 0;
+}
+
+.cat-title h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 3.500em;
+  color: #fff;
+}
+
+.authored-by {
+    display: inline-flex;;
+}
+
+.authored-by li {
+    list-style: none;
+    padding-right: 1em;
+}
+
+.authored-by li a {
+    color: #fff;
+    font-size: 0.750em;
+}
+
+.article-one {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../images/image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.article-two {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/image-2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.article-two-inner, .article-three-inner {
+  position: relative;
+  padding: 0 0.625em;
+  top: 4em;
+}
+
+.article-three-inner {
+    top: 98px;
+}
+
+.article-two-inner p, .article-three-inner p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 0.875em;
+  line-height: 1.3125em;
+  color: #fff;
+  margin: 0.625em 0;
+}
+
+.article-two-inner h1, .article-three-inner h1 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.article-three {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/image-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.latest {
+  width: 90%;
+  margin: 5.25em auto 0 auto;
+}
+
+.latest h2 {
+    margin-bottom: 0.7em;
+}
+
+.latest h2 a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25em;
+  line-height: 1.375em;
+  color: #f42;
+  cursor: pointer;
+}
+
+.latest h2 a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.latest-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inner-article {
+  width: 24%;
+  margin-bottom: 1.25em;
+}
+
+.inner-article h3 a {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 0.875em;
+  line-height: 0.9375em;
+  font-weight: 700;
+  color: #000;
+}
+
+.inner-article h3 a:hover {
+  text-decoration: underline;
+}
+
+.inner-article p a, .inner-article p span {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 0.775em;
+  font-weight: 500;
+  line-height: 1em;
+  color: #777;
+}
+
+.inner-article p {
+  margin-top: 0.3em;
+}
+
+.inner-article img {
+  width: 100%;
+  height: 8.438em;
+}
+
+.funding {
+  width: 90%;
+  margin: 1.25em auto;
+}
+
+.fund-title h2 a {
+  float: left;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.125em;
+  color: #f42;
+  cursor: pointer;
+}
+
+.fund-title h2 a:hover {
+  color: #000;
+}
+
+.fund-navigation {
+  float: right;
+}
+
+.fund-navigation ul li {
+  display: inline-block;
+}
+
+.fund-navigation ul li a {
+  font-size: 1em;
+  line-height: 1.125em;
+  font-weight: 400;
+  color: #f42;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.title-funding::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.inner-funding {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1.25em;
+}
+
+.project {
+  position: relative;
+  width: 24%;
+}
+
+.project-image {
+  width: 3.75em;
+  height: 3.75em;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+}
+
+.sping-lab {
+  width: 100%;
+  height: 2.25em;
+  background: #f42;
+}
+
+.sping-lab h3 {
+  color: #fff;
+  font-size: 1em;
+  line-height: 2.25em;
+  margin-left: 85px;
+}
+
+.second-heading {
+  background: rgba(255,68,34,.08);
+  padding: 0.63em 0;
+}
+
+.second-heading h4 {
+  font-size: 1.125em;
+  line-height: 1.125em;
+  font-weight: 700;
+  color: #000;
+  padding-left: 4.75em;
+}
+
+.second-heading h5 {
+  font-size: 0.75em;
+  line-height: 2em;
+  font-weight: 500;
+  color: #000;
+  opacity: 0.5;
+  padding-left: 7.2em;
+}
+
+.project p a {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 0.8em;
+  line-height: 1.875em;
+  font-weight: 500;
+  color: #555;
+}
+
+.horizontal {
+    border-bottom: 1px solid rgba(255,68,34,.25);
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+}
+
+.last-section {
+  font-size: 0.875em;
+  line-height: 1em;
+}
+
+.last-section a span {
+  color: #999;
+}
+
+a.last-sect {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 0.8em;
+  line-height: 1.875em;
+  font-weight: 500;
+  color: #555;
+}
+
+.para-section {
+  background: #fffaf8;
+  padding: 15px;
+}
+
+.project-images {
+  width: 100%;
+  height: 17.250em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.project-image-one {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/latest-1.png');
+ }
+
+.project-image-two {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/latest-2.jpg');
+}
+
+.project-image-three {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/latest-3.jpg');
+}
+
+.project-image-four {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/latest-4.jpg');
+}
+
+.project-image-five {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/latest-5.jpg');
+}
+
+.project-image-six {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/latest-6.jpg');
+}
+
+.project-image-seven {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/latest-7.png');
+}
+
+.project-image-eight {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/latest-8.png');
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects > div {
+  width: 23%;
+}
+
+.article-category {
+  width: 90%;
+  margin:1.25em auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  width: 31%;
+  margin-right: 2%;
+  margin-bottom: 2em;
+}
+
+.category h3 {
+  margin-bottom: 0.63em;
+}
+.category h3 a {
+text-decoration: none;
+font-weight: 700;
+font-size: 1.25em;
+line-height: 1.375em;
+color: #f42;
+cursor: pointer;
+}
+
+.category h3 a:hover {
+  color: #000;
+}
+
+.project-images-inner {
+  position: absolute;
+  top: 45%;
+  left: 3%;
+}
+
+.project-images-inner p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1em;
+  color: #fff;
+  margin: 0.625em 0.5em;
+}
+
+.project-images-inner p a, .project-images-inner p span {
+  color: #aaa;
+}
+
+.project-images-inner h4 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.25em;
+  line-height: 1.3em;
+  color: #fff;
+  margin-left: 0.5em
+}
+
+.project-images-inner h4:hover {
+  text-decoration: underline;
+}
+
+.sub-section .project-thumbnail {
+  width: 6em;
+  height: 6em;
+  margin-right: -0.313em !important;
+  margin-bottom: -0.525em;
+  margin-top: -0.313em;
+}
+
+.sub-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255,68,34,.06);
+  margin-top: 0.15em;
+  color: #f42;
+  padding-left: 0.5em;
+}
+
+.sub-section div p {
+  font-family: 'Maven Pro', sans-serif;
+  margin-top: 0.5em;
+  margin-bottom: 0.4em;
+}
+
+.sub-section div h5 a {
+  color: #f42;
+}
+
+.sub-section div h5 a:hover {
+  text-decoration: underline;
+}
+
+.sub-section div {
+    padding: 0.313em;
+}
+
+.category ul {
+  list-style: none;
+}
+
+.category ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.category ul li {
+  padding: 0.5em 1.25em;
+  border-bottom: 0.03125em solid #eee;
+}
+
+.category ul li a {
+  font-size: 0.8125em;
+  line-height: 1.25em;
+  font-weight: 400;
+  color: #555;
+}
+
+.latest-deals {
+	width: 90%;
+	margin:auto;
+}
+
+.deals-title {
+width: 100%;
+height: 2.5em;
+margin:1em 0;
+}
+
+.deals-title p #title {
+	font-size: 1.5em;
+	color: #f42;
+	text-decoration: none;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 700;
+
+}
+
+.deals-title p #more-deals {
+	font-size: 0.75em;
+	color: #f42;
+	text-decoration: none;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 300px;
+  float: right;
+
+}
+
+.deal-title:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.inner-deal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.article-deal {
+  width: 24%;
+  margin-bottom: 1.5em;
+}
+
+.article-deal img {
+  width: 17.875em;
+  height: 12.563em;
+}
+
+.article-deal p {
+  padding: 0.5em 0;
+}
+
+.article-deal p span{
+  margin-left: 0.6em;
+}
+
+.article-deal p small{
+	font-size: 0.8125em;
+  color: #aaa;
+}
+
+.article-deal h3 a {
+	line-height: 1em;
+	font-size:0.75em;
+	color: #000;
+}
+
+.article-deal h3 a:hover{
+	color: #f42;
+	text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+}
+
+.top-footer {
+  width: 100%;
+  height: 160px;
+  background-color: #131313;
+}
+
+#social-media ul {
+  height: 2.813em;
+  display: inline;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+#social-media ul li {
+  display: inline-block;
+}
+
+#social-media ul li {
+  font-size: 1.25em;
+  display: inline-block;
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 50%;
+  background: #333;
+  border-radius: 0.063em solid #777;
+  margin: 1.5em 0.625em 1.5em 0;
+}
+
+#social-media ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#social-media ul li a i {
+  padding-top: 0.625em;
+}
+
+#social-media ul li:hover {
+  background-color: #131313;
+
+}
+
+#menu-links ul {
+  width: 100%;
+  height: 1.5em;
+  display: inline;
+  list-style: none;
+}
+
+#menu-links ul li {
+  padding-right: 0.625em;
+  display: inline-block;
+}
+
+#menu-links ul li a {
+  text-decoration: none;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  color:#aaa;
+}
+
+#menu-links ul li a:hover {
+  color:#fff;
+}
+
+.bottom-footer {
+  height: 6.0625em;
+  width: 100%;
+  background-color: #000;
+}
+
+.bottom-footer p span img{
+  height: 0.8em;
+  width: auto;
+  vertical-align: baseline;
+}
+
+.bottom-footer p {
+  line-height: 1.25em;
+  font-size: 0.8125em;
+  color: #aaa;
+  padding-top: 1em;
+}
+
+.bottom-footer p i {
+  color: red;
+  font-size: 0.5em;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .banner {
+    margin-top: 57px;
+  }
+
+  .main-menu {
+      overflow: hidden;
+      background-color: #fff;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+  }
+
+  .logo-tnw {
+    background: red;
+    padding: 0 15px;
+    z-index: 999;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+  }
+
+  .logo-tnw a img {
+    width: 55px;
+    height: auto;
+    background: red;
+    position: relative;
+    top: 0px;
+
+  }
+
+  .top-nav {
+    display: none;
+  }
+
+  .article-deal img {
+    width: 100%;
+    height: auto;
+  }
+
+  .inner-article img {
+    width: 100%;
+    height:  auto;
+  }
+
+  .latest-deals {
+    width: 95%;
+    margin: auto;
+  }
+
+  .hero-logo p {
+    display: none;
+  }
+
+  .image-logo {
+    display: none;
+  }
+
+  .banner {
+    grid-template-rows: 70% 70%;
+  }
+
+  .cat-title {
+    top: 6em;
+  }
+
+  .cat-title h1 {
+      font-size: 2em;
+  }
+
+  .article-two-inner h1, .article-three-inner h1 {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+
+  .article-two-inner, .article-three-inner {
+    top: 2em;
+  }
+
+  .latest {
+    width: 95%;
+    margin: 9em auto 0 auto;
+  }
+
+  .funding {
+    width: 95%;
+  }
+
+  .article-category {
+      width: 95%;
+  }
+
+  .project-images-inner h4 {
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-left: 0.5em;
+    margin-right: 1em;
+  }
+
+  .sub-section div h5 a {
+    font-size: 0.8em;
+  }
+
+  .sub-section div p {
+    margin-top: 0;
+  }
+
+  .sub-section div {
+    padding: 0.2em;
+  }
+
+  .project-images {
+    width: 100%;
+    height: 16em;
+  }
+
+  .sub-section .project-thumbnail {
+    width: 5em;
+    height: 5em;
+    margin-right: -0.2em !important;
+    margin-bottom: 0;
+    margin-top: -0.2em;
+  }
+
+  .kwach {
+    font-size: 0.65em !important;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article-deal img {
+      width: 100%;
+      height: 9.563em;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 899px) {
+  .banner {
+    margin-top: 56px;
+  }
+
+  .main-menu {
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .logo-tnw {
+    background: red;
+    padding: 0 15px;
+    z-index: 999;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+  }
+
+  .logo-tnw a img {
+    width: 55px;
+    height: auto;
+    background: red;
+    position: relative;
+    top: 0px;
+  }
+
+  .top-nav {
+    display: none;
+  }
+
+  .image-logo {
+    display: none;
+  }
+
+  .hero-logo p {
+    display: none;
+  }
+
+  .cat-title h1 {
+     font-size: 2em;
+  }
+
+  .banner {
+    grid-template-rows: 70% 70%;
+  }
+
+  .cat-title {
+    top: 8em;
+  }
+
+  .article-two-inner, .article-three-inner {
+    top: 2em;
+  }
+
+  .article-two-inner h1, .article-three-inner h1 {
+    font-size: 1em;
+    line-height: 1em;
+  }
+
+  .latest {
+    width: 95%;
+    margin: 10em auto 0 auto;
+  }
+
+  .inner-article {
+    width: 30%;
+    margin-bottom: 1.5em;
+    margin-right: 1.07em;
+  }
+
+  .latest-inner {
+     justify-content: left;
+  }
+
+  .funding {
+    width: 95%;
+    margin: 1.5em auto;
+  }
+
+  .title-funding {
+    display: inline-block;
+  }
+
+  .fund-navigation {
+    float: left;
+    margin-top: 0.5em;
+  }
+
+  .project {
+    position: relative;
+    width: 32%;
+  }
+
+  .project:nth-child(4) {
+    display: none;
+  }
+
+  .article-category {
+    width: 95%;
+  }
+
+  .category {
+    width: 48%;
+  }
+
+  .latest-deals {
+    width: 95%;
+    margin: auto;
+  }
+
+  .article-deal {
+    width: 31%;
+    margin-bottom: 1.5em;
+    margin-left: 0.688em;
+  }
+
+  .article-deal img {
+    width: 14em;
+    height: auto;
+  }
+
+  .inner-deal {
+    justify-content: left;
+  }
+
+}
+
+@media screen and (max-width: 766px) {
+  .hide-me {
+    display: none !important;
+  }
+
+  .banner {
+      margin-top: 29px;
+  }
+
+  .main-menu {
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .logo-tnw {
+    background: red;
+    padding: 0 15px;
+    z-index: 999;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+  }
+
+  .logo-tnw a img {
+    width: 55px;
+    height: auto;
+    background: red;
+    position: relative;
+    top: 0px;
+  }
+
+  .hamberger-menu {
+    border: 0.063em solid #eee;
+    display: inline-block !important;
+
+  }
+
+  .hamberger-menu a i{
+    color: red;
+  }
+
+  .top-nav {
+    display: none;
+  }
+
+  .banner {
+    display: inline-block;
+  }
+
+  .hero-logo,
+  .hero-logo p {
+    display: none;
+  }
+
+  .cat-title h1 {
+    font-size: 1.2em;
+  }
+
+  .banner {
+    grid-template-rows: 70% 70%;
+  }
+
+  .cat-title {
+    top: 4.5em;
+  }
+
+  .article-two-inner, .article-three-inner {
+    top: 4.5em;
+  }
+
+  .article-two-inner h1, .article-three-inner h1 {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .main-menu ul li a {
+    text-decoration: none;
+    padding: 0 0.75em;
+    text-transform: uppercase;
+    color: #aaa;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    line-height: 3em;
+  }
+
+  .article-one,
+  .article-two,
+  .article-three {
+    width: 100%;
+    height: 11.250em;
+  }
+
+  .latest {
+    width: 95%;
+    margin: 9em auto 0 auto;
+  }
+
+  .latest-inner {
+    display: inline-block;
+  }
+
+  .inner-article {
+    display: flex;
+    width: 100%;
+  }
+
+  .article-inner-image {
+    width: 20%;
+  }
+
+  .article-inner-content {
+    margin: 0.5em 0.5em;
+  }
+
+  .article-inner-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .inner-article {
+    margin-bottom: 0.2em;
+  }
+
+  .funding {
+    width: 95%;
+    margin: 3em auto;
+  }
+
+  .title-funding {
+    display: inline-block;
+  }
+
+  .fund-navigation {
+    float: none;
+  }
+
+  .fund-navigation ul {
+    margin-top: 2.5em;
+  }
+
+  .fund-navigation ul li {
+    display: block;
+    margin-top: 0.5em;
+  }
+
+  .inner-funding {
+    display: block;
+  }
+
+  .project {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.2em;
+  }
+
+  .article-category {
+    width: 95%;
+    margin: 1.25em auto;
+    display: block;
+  }
+
+  .category {
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 2em;
+  }
+
+  .latest-deals {
+    width: 95%;
+    margin: auto;
+  }
+
+  .inner-deal {
+    display: inline-block;
+    margin-bottom: 3em;
+  }
+
+  .article-deal {
+    width: 100%;
+    margin-bottom: 0.3em;
+    display: flex;
+  }
+
+  .inner-article h3 a {
+    font-size: 0.7em;
+    line-height: 0.9375em;
+  }
+
+  .article-three-inner {
+    top: 5em;
+  }
+
+  .article-deal h3 a {
+    line-height: 0.8em;
+    font-size: 0.6em;
+    color: #000;
+  }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1125px){
+  .logo-tnw {
+    display: none;
+  }
+
+  .main-left {
+    margin-left: -30px;
+  }
+
+  .image-logo {
+      width: 16.938em;
+  }
+
+  .cat-title {
+    margin: 0.938em;
+    position: relative;
+    top: 13em;;
+  }
+
+  .cat-title h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2.7em;
+    color: #fff;
+  }
+
+  .article-three-inner {
+    top: 63px;
+  }
+
+  .project-images-inner {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+  }
+
+  .sub-section div h5 a {
+    color: #f42;
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (min-width: 1126px) {
+  .logo-tnw {
+    display: none;
+  }
+
+  .main-left {
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .main-menu ul li a {
+    padding: 0 0.3em;
+  }
+}
